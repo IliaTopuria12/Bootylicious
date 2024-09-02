@@ -27,6 +27,11 @@
     rel="stylesheet">
 
   <!-- 
+    Prefijo movil 
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  
+  <!-- 
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
@@ -51,7 +56,7 @@
 
         <span class="span">Bootylicious</span>
       </a>
-
+<!--
       <nav class="navbar" data-navbar>
 
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -91,7 +96,7 @@
         <span class="line"></span>
         <span class="line"></span>
       </button>
-
+    -->
     </div>
   </header>
 
@@ -113,16 +118,16 @@
           <div class="hero-content">
 
             <p class="hero-subtitle">
-              <strong class="strong">Jessica</strong>Gabino
+              <strong class="strong">Plazas</strong>Limitadas
             </p>
 
-            <h1 class="h1 hero-title">Trabaja Duro Para Vivir Mejor</h1>
+            <h1 class="h1 hero-title">¡No te pierdas esta oportunidad única!</h1>
 
             <p class="section-text">
-              Lo que marca la diferencia entre fallar y ser derrotado es si estás dispuesto a intentarlo o no.
+              Se de los primeros en entrar a la lista de espera.
             </p>
 
-            <a href="#service" class="btn btn-primary">Empecemos</a>
+            <a href="#about" class="btn btn-primary">Quiero entrar</a>
 
           </div>
 
@@ -154,7 +159,29 @@
 
       <section class="section about" id="about" aria-label="about">
         <div class="container">
+          
+          <div class="about-content">
 
+            <form action="/submit" method="post">
+              <div class="campos-form">
+                <label for="nombre">Nombre (sin apellidos)</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>  
+              </div>
+              
+              <div class="campos-form">
+                <label for="correo">Correo Electrónico</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required><br><br>
+              </div>
+
+              <div class="campos-form">
+                <label for="telefono">Teléfono Móvil</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="612 34 56 78" required><br><br>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-form">Unirme ahora</button>
+            </form>
+
+          </div>
           <div class="about-banner has-after">
             <img src="./assets/images/about-banner3.png" width="660" height="648" loading="lazy" alt="about banner"
               class="w-100">
@@ -167,46 +194,6 @@
             <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
               class="abs-img w-100">
           </div>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
-
-            <p class="section-text">
-              Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat.
-              Pellentesque
-              porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.
-            </p>
-
-            <p class="section-text">
-              Integer placerat vitae metus posuere tincidunt. Nullam suscipit ante ac aliquet viverra vestibulum ante
-              ipsum primis.
-            </p>
-
-            <div class="wrapper">
-
-              <div class="about-coach">
-
-                <figure class="coach-avatar">
-                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
-                </figure>
-
-                <div>
-                  <h3 class="h3 coach-name">Denis Robinson</h3>
-
-                  <p class="coach-title">Our Coach</p>
-                </div>
-
-              </div>
-
-              <a href="#" class="btn btn-primary">Explore More</a>
-
-            </div>
-
-          </div>
-
         </div>
       </section>
 
@@ -753,6 +740,11 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <!--
+    Prefijo movil
+  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="./assets/js/prefijo-movil.js"></script>
 </body>
 
 </html>
