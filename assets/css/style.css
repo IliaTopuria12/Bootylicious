@@ -369,6 +369,7 @@ body {
   font-family: Arial, sans-serif;
   border-radius: 40px;
   top: 20px;
+  border: 1px solid #fd3d0d;
 }
 
 .contenido {
