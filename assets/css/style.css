@@ -403,6 +403,7 @@ body {
   border-radius: 25px;
   transition: background-color 0.3s;
   font-family: var(--ff-catamaran);
+  font-weight: 700;
 }
 
 .boton button:hover {
@@ -412,6 +413,9 @@ body {
 @media (max-width: 768px) {
   .header{
     background: none !important;
+  }
+  .about-content h2{
+    line-height: 1.25em;
   }
 
   .barra-contador {
@@ -451,6 +455,11 @@ body {
   .boton button {
       font-size: 16px;
       padding: 10px;
+  }
+
+  .footer .footer-top .container{
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -660,6 +669,20 @@ body {
   margin-bottom: -25px;
 }
 
+.about-content h2 {
+  font-size: 35px;
+  font-family: var(--ff-catamaran);
+  font-weight: 500;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.about-content h2 span{
+  display: inline;
+  color: #fd3d0d;
+  font-weight: 700;
+}
+
 .about-content input {
   border: 1px solid #fd3d0d;
   border-radius: 12px;
@@ -695,6 +718,10 @@ body {
 .about-content .intl-tel-input .iti__flag-container {
   padding: 0;
   margin-right: 8px;
+}
+
+.logo img {
+  width: 200px;
 }
 
 .btn-form{
@@ -1017,6 +1044,13 @@ body {
   background-color: var(--rich-black-fogra-29-1);
   color: var(--white);
   box-shadow: none;
+}
+
+.footer .footer-top .container {
+  border: 1px solid #fd3d0d;
+  border-radius: 18px;
+  padding: 40px;
+  padding-left: 50px;
 }
 
 .social-list {
