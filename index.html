@@ -50,59 +50,29 @@
 
   <header class="header" data-header>
     <div class="container">
-
-      <a href="#" class="logo">
-        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
-
-        <span class="span">Bootylicious</span>
-      </a>
-<!--
-      <nav class="navbar" data-navbar>
-
-        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
-        </button>
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link active" data-nav-link>Inicio</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>Sobre mí</a>
-          </li>
-
-          <li>
-            <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
-          </li>
-
-          <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Testimonios</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Contáctame</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <a href="#" class="btn btn-secondary">REGALO</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    -->
+      <div class="barra-contador">
+        <div class="contenido">
+          <div class="arriba">
+            <div class="icono">
+                <img src="assets/images/logo.png" alt="Logo" width="40" height="40">
+            </div>
+            <div class="mensaje">
+                CERRAMOS INSCRIPCIONES
+            </div>
+          </div>
+          <div class="abajo">
+            <div id="contador" class="contador">
+                00:00:00:00
+            </div>
+            <div class="boton">
+                <button onclick="reservar()">RESERVAR MI PLAZA</button>
+            </div>
+          </div>  
+            
+        </div>
+    </div>    
     </div>
   </header>
-
-
-
-
 
   <main>
     <article>
@@ -725,8 +695,10 @@
     <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
   </a>
 
-
-
+  <!--
+    Cuenta atrás
+  -->
+  <script src="assets/js/contador.js"></script>
 
 
   <!-- 
