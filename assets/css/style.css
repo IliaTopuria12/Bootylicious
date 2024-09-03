@@ -324,7 +324,6 @@ body {
   gap: 25px;
   overflow-x: auto;
   padding-block-end: 30px;
-  scroll-snap-type: inline mandatory;
 }
 
 .scrollbar-item {
@@ -348,6 +347,32 @@ body {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+
+.header-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rich-black-fogra-29-1);
+  padding: 10px;
+}
+
+.container-legal{
+  margin: 0 140px;
+  padding: 50px 0px;
+  color: black
+}
+
+.container-legal p{
+  margin-bottom: 1.5em;
+}
+
+.lista-legal {
+  padding-left: 40px;
+}
+
+.lista-legal li{
+  margin-bottom: 1.5em;
+}
 
 .arriba, .abajo{
   display: flex;
@@ -391,7 +416,7 @@ body {
 .contador {
   font-size: 20px;
   margin-right: 20px;
-  font-weight: bold;
+  font-family: var(--ff-rubik);
 }
 
 .boton button {
@@ -821,6 +846,11 @@ body {
   font-size: var(--fs-3);
 }
 
+.card-content .h3{
+  color: #fd3d0d;
+  font-size: 30px;
+}
+
 .play-btn {
   background-color: var(--coquelicot);
   color: var(--white);
@@ -883,8 +913,8 @@ body {
 .class-card .card-title:is(:hover, :focus) { color: var(--coquelicot); }
 
 .class-card .card-text {
-  color: var(--sonic-silver);
-  font-size: var(--fs-6);
+  color: black;
+  font-size: 25px;
   margin-block: 16px 12px;
 }
 
