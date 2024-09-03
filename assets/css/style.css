@@ -428,8 +428,13 @@ body {
   color: #5a5a5a;
 }
 
-.extra-content h2 {
-  display: ruby;
+.extra-content h2.special{
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.extra-content h2.special span{
+  display: inline;
 }
 
 .extra-content h2 span {
@@ -510,6 +515,10 @@ body {
 
   .has-scrollbar{
     flex-direction: column;
+  }
+
+  .extra-content h2.special{
+    white-space: normal !important;
   }
 
   .footer .footer-top .container{
