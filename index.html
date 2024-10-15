@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootylicious</title>
+  <title>Luis Álvarez - Mindset</title>
 
   <!-- 
     - favicon
   -->
-  <link rel="icon" href="./assets/images/logo.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./assets/images/la-logo.png" sizes="32x32" type="image/png">
 
   <!-- 
     - custom css link
@@ -75,6 +75,57 @@
     </div>
   </header>
   -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img class="la-logo" src="assets/images/la-logo.png" alt="logo">
+
+        <span class="span">Luis Álvarez</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Inicio</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Servicios</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Sobre mí</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Testimonios</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contáctame</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">REGALO</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
   <main>
     <article>
 
@@ -104,11 +155,11 @@
 
           <div class="hero-banner">
 
-            <img src="./assets/images/hero-banner1.png" width="660" height="753" alt="hero banner" class="w-100">
+            <img src="./assets/images/luisalvarez.png" width="660" height="753" alt="hero banner" class="w-100">
 
-            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+            <img src="./assets/images/hero-circle-onela.png" width="666" height="666" aria-hidden="true" alt=""
               class="circle circle-1">
-            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+            <img src="./assets/images/hero-circle-twola.png" width="666" height="666" aria-hidden="true" alt=""
               class="circle circle-2">
 
             <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
@@ -120,58 +171,67 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
+      <!--
+        - NEWSLETTER
       -->
 
-      <section class="section about" id="about" aria-label="about">
-        <div class="container">
+      <div class="newsletter-container">
+          <div class="newsletter-content">
+              <div class="newsletter-image">
+                  <img src="assets/images/newsletter_pic.png" alt="Imagen de newsletter">
+              </div>
+              <div class="newsletter-text">
+                  <h2>Entra en mi círculo privado gratis</h2>
+                  <p>Únete a más de 200.000 personas que reciben mis consejos semanales sobre motivación, fitness y estilo de vida saludable, con rutinas, recursos y estrategias para alcanzar tus objetivos personales.</p>
+                  <form action="suscribirse.php" method="POST">
+                      <input type="email" name="email" placeholder="Email" required>
+                      <label>
+                          <input type="checkbox" name="acepto-politicas" required> 
+                          Acepto las políticas de privacidad y los términos y condiciones
+                      </label>
+                      <button type="submit">Suscribirse</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    
+
+      <!-- 
+        - #SERVICE
+      -->
+      <section class="service" id="service" aria-label="service">
+        <div class="section-container">
+          <h2 class="section-title">
+              La disciplina y el entrenamiento son todo lo que necesitas para transformar 
+              <span class="highlight" style="text-decoration: underline; text-decoration-color: #0074ff; text-underline-offset: 5px;">cada área de tu vida</span>
+          </h2>
+          <div class="cards-container">
+            <div class="card">
+              <div class="card-icon">💪</div>
+              <h3 class="card-title">Mejora física</h3>
+              <p class="card-description">Transforma tu cuerpo, alcanza tus metas físicas y siente cómo tu energía y bienestar mejoran día a día con un estilo de vida activo y saludable.</p>
+            </div>
           
-          <div class="about-content">
-            <h2>El evento totalmente <span>GRATUITO</span> en el que aprenderás a bajar 5kg en 1 semana</h2>
-            <form action="/submit" method="post">
-              <div class="campos-form">
-                <label for="nombre">Nombre (sin apellidos)</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>  
-              </div>
-              
-              <div class="campos-form">
-                <label for="correo">Correo Electrónico</label><br>
-                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required><br><br>
-              </div>
-
-              <div class="campos-form">
-                <label for="telefono">Teléfono Móvil</label><br>
-                <input type="tel" id="telefono" name="telefono" placeholder="612 34 56 78" required><br><br>
-              </div>
-              
-              <button type="submit" class="btn btn-primary btn-form">Unirme ahora</button>
-            </form>
-
+            <div class="card">
+              <div class="card-icon">🧠</div>
+              <h3 class="card-title">Fuerza mental</h3>
+              <p class="card-description">Desarrolla una mentalidad a prueba de todo. Encuentra motivación constante, enfrenta los retos con determinación y supera cualquier obstáculo que se cruce en tu camino.</p>
+            </div>
+          
+            <div class="card">
+              <div class="card-icon">🤝</div>
+              <h3 class="card-title">Relaciones personales</h3>
+              <p class="card-description">Conviértete en una inspiración para los demás. Influye positivamente en quienes te rodean, sé un líder y un ejemplo de disciplina y compromiso.</p>
+            </div>
+          
+            <div class="card">
+              <div class="card-icon">💼</div>
+              <h3 class="card-title">Éxito y disciplina</h3>
+              <p class="card-description">Crea una rutina de éxito que te lleve a alcanzar tus objetivos personales y profesionales. Descubre cómo la constancia y el esfuerzo te acercan a la mejor versión de ti mismo.</p>
+            </div>
           </div>
-          <div class="about-banner has-after">
-            <p>(Video hablando)</p>
-            <img src="./assets/images/about-banner3.png" width="660" height="648" loading="lazy" alt="about banner"
-              class="w-100">
-
-            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
-              alt="" class="circle circle-1">
-            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
-              alt="" class="circle circle-2">
-
-            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
-              class="abs-img w-100">
-          </div>
-        </div>
+        </div>    
       </section>
-
-
-
-
 
       <!-- 
         - #VIDEO
@@ -183,7 +243,7 @@
           <div class="video-card has-before has-bg-image"
             style="background-image: url('./assets/images/video-banner.jpg')">
 
-            <h2 class="h2 card-title">Explore Fitness Life</h2>
+            <h2 class="h2 card-title">Transforma Tu Vida</h2>
 
             <button class="play-btn" aria-label="play video">
               <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
@@ -195,14 +255,11 @@
       </section>
 
 
-
-
-
       <!-- 
-        - #SERVICE
+        - #ABOUT
       -->
 
-      <section class="section class bg-dark has-bg-image" id="service" aria-label="class"
+      <section class="section class bg-dark has-bg-image" id="about" aria-label="class"
         style="background-image: url('./assets/images/classes-bg.png')">
         <div class="container">
 
@@ -408,7 +465,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="assets/images/logo-largo.png" alt="Logo footer">
+            <img src="" alt="Logo footer">
           </a>
 
           <p class="footer-brand-text">
@@ -436,7 +493,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2024 Bootylicious. All Rights Reserved By <a href="https://www.instagram.com/chriisstiaaaan/" class="copyright-link">@chriisstiaaaan.</a>
+          &copy; 2024 Luis Álvarez. All Rights Reserved By <a href="https://www.instagram.com/chriisstiaaaan/" class="copyright-link">@chriisstiaaaan.</a>
         </p>
 
       </div>
