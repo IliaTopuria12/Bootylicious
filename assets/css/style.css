@@ -1611,7 +1611,7 @@ p.copyright{
 
 }
 
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .abs-img-1 {
     top: 220px;
     right: -70px;
@@ -1665,7 +1665,7 @@ p.copyright{
   }
 }
 
-@media (min-width: 336px) and (max-width: 391px){
+@media (min-width: 339px) and (max-width: 391px){
   .abs-img-1 {
     top: 210px;
     right: -40px;
@@ -1679,7 +1679,7 @@ p.copyright{
   }
 }
 
-@media (max-width: 336px){
+@media (max-width: 339px){
   .abs-img-2 {
     bottom: 12px;
     left: -40px;
@@ -1690,6 +1690,71 @@ p.copyright{
     top: 170px;
     right: -35px;
     width: 120px;
+}
+}
+
+@media (max-width: 1200px){
+  .newsletter-container{
+    max-width: 90% !important;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  .cards-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1054px){
+  .newsletter-text form label {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 515px) and (max-width: 768px){
+  .newsletter-text h2{
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .newsletter-text p{
+    text-align: left;
+  }
+
+  .newsletter-image img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 600px){
+  .newsletter-text {
+    text-align: left;
+  }  
+
+  .newsletter-image img {
+    width: 230px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 30px;
+  }
+
+  .newsletter-text input[type="email"] {
+    width: 100% !important;
+  }
+
+  .newsletter-text button{
+    width: 45%;
+  }
+
+  .newsletter-text form label {
+    font-size: 15px;
+  }
+
+  .newsletter-text input[type="checkbox"] {
+    margin-bottom: 25px;
 }
 }
 
